@@ -46,7 +46,7 @@
 
 /*FIN ANIMACION */
 
-.RRSS {
+.box-redes-icon {
     display: inline-block;
     width: 45px;
     height: 45px;
@@ -55,13 +55,33 @@
     background-color: #040404;
     text-align: center;
     transition: all 300ms ease;
-    margin-right: 45px;
+    margin-right: 3rem;
+}
+
+@media screen and (max-width:768px) and (min-width: 300px) { 
+
+    /* QUERIS FOOTER */
+    .box-redes {
+    display: flex;  
+    width: 100vw;    
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .box-redes-icon {
+        margin: 0px 0px 50px 0px        
+    }
+    /* FIN QUERIS FOOTER */
+    
+    /* QUERIS IMAGEN CAROUSEL */
+    .carousel-img {
+        height: 25vh;
+    }
 }
 
 /* ANIMACION REDES SOCIALES */
 
-.boxRRSS a:hover {
-    color: #fff;
+.box-redes a:hover {
     animation: saltar 1s ease-in-out 1 normal both;
 }
 
